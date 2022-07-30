@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Saluton is a tool to facilitate the first contact between different nationalities and cultures with business intentions",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
