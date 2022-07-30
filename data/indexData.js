@@ -1,6 +1,7 @@
 import { Country } from '../app/classes/Country.js'
+import { Greetings } from '../app/classes/Greetings.js'
 
-
-
-const country = await new Country(['1','2','3','4','5','6','7','8'])
+const country = await new Country([])
 console.log(country)
+const greetings = await new Greetings([])
+console.log(greetings)
