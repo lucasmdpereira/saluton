@@ -1,7 +1,11 @@
-import { Country } from '../app/classes/Country.js'
-import { Greetings } from '../app/classes/Greetings.js'
+import { getCountries } from './services/getCountries.js'
+import { getGreetings } from './services/getGreetings.js'
 
-const country = await new Country([])
-console.log(country)
-const greetings = await new Greetings([])
+//'./data/util/countriesData.csv'
+//'./data/util/greetings.csv'
+
+const countries = await getCountries('./data/util/countriesData.csv')
+const greetings = await getGreetings('./data/util/greetings.csv')
+console.log(countries)
 console.log(greetings)
+
