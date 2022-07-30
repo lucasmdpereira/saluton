@@ -1,4 +1,4 @@
-import { Country } from './classes/Country.js'
+import { server } from './server.js'
 
-const country = await new Country(['1','2','3','4','5','6','7','8'])
-console.log(country)
+server.listen(3000)
+.on('listening', () => console.log(`running at: 3000`))
