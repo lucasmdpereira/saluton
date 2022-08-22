@@ -1,3 +1,4 @@
+import { response } from 'express';
 import { getCountries } from './services/getCountries.js'
 import { getGreetings } from './services/getGreetings.js'
 
@@ -19,3 +20,10 @@ export async function queryGreetings(query, response){
     return response.status(404).json("Not Found")
 }
 
+export async function getAllCountries(request, response){
+    return response.status(200).json(countries)
+}
+
+export async function getAllGreetings(request, response){
+    return response.status(200).json(greetings)
+}
